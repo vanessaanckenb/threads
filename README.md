@@ -1,14 +1,14 @@
-In progress...
-
-<br/>
-<br/>
-
 # Threads
 
 <br/>
 <br/>
 
-"Um fluxo de controle sequencial isolado dentro de um programa"
+Aqui abordarei exemplos dos conceitos principais das threads, como: ordem de execução, sincronização, wait e notify, notifyAll, daemon, prioridade e deadlock.
+
+<br/>
+<br/>
+
+Threads = "Um fluxo de controle sequencial isolado dentro de um programa"
 
 Através das Threads podemos executar tarefas em paralelo;
 
@@ -290,7 +290,19 @@ java.util.Vector
 
 ---------------------------------------------------------------
 
+* Exemplo J - Deadlock example
 
+No exemplo, dentro do DataTask, sincronizamos o objeto PoolConnection, ou seja, só poderemos entrar nele quando esse synchronized finalizar, a outra thread com a outra task vai rodar, porém o primeiro synchronized dela é do objeto TransactionManager, esse objeto não esta sincronizado, então ele roda e fica aguardando o proximo synchronized que é do objeto PoolConnection, mas ele nao finaliza ate rodar o TransactionManager que esta parado na outra task, um esta aguardando o outro e nunca sairão disso. A ordem do synchronized deveria ser a mesma para nao ocorrer esse tipo de problema.
+
+Esse exemplo deixa as threads bloqueadas (blocked).
+
+Uma thread segura um recurso e aguarda por outro. 
+
+Somente as threads envolvidas no deadlock ficam paradas.
+
+Ao obter os recursos, pode acontecer um impasse = interbloqueio = deadlock.
+
+Podemos evitar o impasse obtendo as chaves dos objetos na mesma ordem, em todos os threads.
 
 
 
