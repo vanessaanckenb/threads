@@ -199,16 +199,16 @@ Na classe Thread existe um método setPriority
 A prioridade é um valor inteiro entre 1 e 10, sendo 10 a prioridade mais alta.
 
 ``` 
-Thread limpeza = new Thread(new TarefaLimpeza(banheiro), "Limpeza");
-limpeza.setPriority(10);
-limpeza.start();
+Thread cleanning = new Thread(new TaskThree(a), "Maid");
+cleanning.setPriority(10);
+cleanning.start();
 ``` 
 
 ou também usar as constantes:
 
 ``` 
-limpeza.setPriority(Thread.MIN_PRIORITY);
-limpeza.setPriority(NORM_PRIORITY);
+cleanning.setPriority(Thread.MIN_PRIORITY);
+cleanning.setPriority(NORM_PRIORITY);
 
 ``` 
 
