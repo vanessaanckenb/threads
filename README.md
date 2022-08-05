@@ -53,6 +53,7 @@ TERMINATED A thread está finalizada.
 ---------------------------------------------------------------
 
 <br/>
+<br/>
 
 * Exemplo A - Trabalhando com threads implementando Runnable em uma classe separada com variáveis
 
@@ -71,6 +72,7 @@ no método run passaremos o comando que desejamos.
 ---------------------------------------------------------------
 
 <br/>
+<br/>
 
 
 * Exemplo B - Trabalhando com threads implementando Runnable em uma classe separada sem variáveis
@@ -87,6 +89,7 @@ new Thread(new PrintNumbersImplementingRunnableB()).start();
 ---------------------------------------------------------------
 
 <br/>
+<br/>
 
 
 * Exemplo C - Trabalhando com threads usando o Runnable atraves de um Lambda
@@ -100,6 +103,7 @@ Em vez de criarmos uma classe, podemos usar um lambda, já que o compilador "sab
 
 ---------------------------------------------------------------
 
+<br/>
 <br/>
 
 
@@ -125,6 +129,7 @@ e ela podera usar os métodos da classe mãe como o .start
 
 ---------------------------------------------------------------
 
+<br/>
 <br/>
 
 
@@ -221,6 +226,7 @@ se não usamos nenhuma prioridade explícita, a thread vai assumir o valor 5 (NO
 ---------------------------------------------------------------
 
 <br/>
+<br/>
 
 
 * Exemplo F - Mostrando concorrência adicionando itens em um array sem o modificador synchronized
@@ -242,6 +248,7 @@ como resolver isso? usando o synchronized, como no exemplo abaixo.
 ---------------------------------------------------------------
 
 <br/>
+<br/>
 
 * Exemplo G - Mostrando concorrência adicionando itens em um array com o modificador synchronized
 
@@ -262,6 +269,7 @@ Esse problema não só acontece nos métodos que modificam os dados. Isso també
 ---------------------------------------------------------------
 
 <br/>
+<br/>
 
 * Exemplo H - Usando ArrayList (não é Thread-safe)
 
@@ -277,6 +285,7 @@ List<String> lista = Collections.synchronizedList(new ArrayList<>());
 
 ---------------------------------------------------------------
 
+<br/>
 <br/>
 
 * Exemplo I - Usando Vector (tread-safe)
